@@ -1,0 +1,20 @@
+# Ignore configuration files that may contain sensitive information.
+docroot/sites/*/settings*.php
+docroot/.htaccess
+
+# Ignore paths that contain user-generated content.
+docroot/files
+docroot/sites/*/files
+docroot/sites/*/private
+
+# Ignore cache files when working with sass
+.sass-cache
+.sass-cache/*
+
+# Ignore temporary files
+*~
+
+# Ignore eclipse files
+.buildpath
+.project
+.settings/*
