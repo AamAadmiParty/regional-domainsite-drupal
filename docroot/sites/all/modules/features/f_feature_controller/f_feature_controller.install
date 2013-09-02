@@ -11,7 +11,7 @@
  */
 function f_feature_controller_update_7001() {
   $return = array();
-  $modules = array('dashboard', 'toolbar', 'shortcut', 'overlay', 'search');
+  $modules = array('dashboard', 'toolbar', 'shortcut', 'overlay', 'search', 'comment');
   module_disable($modules);
   $return[] = array('success' => TRUE, 'query' => 'Disabled the modules that are ON by default but are not required.');
   return $return;
