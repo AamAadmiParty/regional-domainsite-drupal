@@ -515,7 +515,11 @@ function f_content_type_advpoll_field_default_field_instances() {
   $field_instances['node-advpoll-field_content_main_image'] = array(
     'bundle' => 'advpoll',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'It is optional but VERY HIGHLY recommended that you add an image when creating this content. <br>
+The image that you add here will be used in various places when listing this content. <br>
+For eg: Latest Content Page, Facebook / Twitter shares etc.<br>
+It is also HIGHLY RECOMMENDED that you upload an image that is roughly square (eg: 300x300 or 110x110 etc.)<br>
+',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -539,14 +543,14 @@ function f_content_type_advpoll_field_default_field_instances() {
     'label' => 'Content Main Image',
     'required' => 0,
     'settings' => array(
-      'alt_field' => 0,
+      'alt_field' => 1,
       'default_image' => 0,
       'file_directory' => 'content_main_image',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
-      'title_field' => 0,
+      'title_field' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -571,6 +575,11 @@ function f_content_type_advpoll_field_default_field_instances() {
   t('Description');
   t('Display results');
   t('If the poll\'s voting availability is being controlled by a cookie, this value determine how long to wait between votes in minutes.');
+  t('It is optional but VERY HIGHLY recommended that you add an image when creating this content. <br>
+The image that you add here will be used in various places when listing this content. <br>
+For eg: Latest Content Page, Facebook / Twitter shares etc.<br>
+It is also HIGHLY RECOMMENDED that you upload an image that is roughly square (eg: 300x300 or 110x110 etc.)<br>
+');
   t('Maximum choices');
   t('Permission settings are necessary for allowing write-in voting, visibility of individual votes and administration of electoral lists.');
   t('Poll Choice');
