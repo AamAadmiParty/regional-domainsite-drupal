@@ -30,4 +30,5 @@ features[variable][] = menu_parent_news
 features[variable][] = node_options_news
 features[variable][] = node_preview_news
 features[variable][] = node_submitted_news
+features[variable][] = pathauto_node_news_pattern
 features[variable][] = save_continue_news
