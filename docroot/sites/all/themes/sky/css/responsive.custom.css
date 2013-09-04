@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-/* Work around for legacy IE */
-@media only screen and (min-width:320px) and (max-width:480px) {
-  .ie6-7 .mbp-c #menu-bar .menu-wrapper  ul,
-  .ie6-7 .mbp-c #menu-bar .menu-wrapper  .sf-menu li {
-    left: auto;
-  }
-}
-=======
 /* responsive.custom.css is for custom media queries that are not set via the theme settings, such as cascading media queries.  By default all the other responsive stylesheets used in Adaptivetheme use a "stacking method", however cascading media queries use a waterfall method so you can leverage the cascade and inheritance for all browsers that support media queries, regardless of screen size.  @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack  NOTE: this file loads by default, to disable got to your theme settings and look under the "CSS" settings tab. */
 /* Really small screens and up */
 /* @media only screen and (min-width: 220px) {} */
@@ -38,5 +29,4 @@
   .region-top-menu { background: #000; color: #ddd; position: fixed; z-index: 9999; width: 100%; max-width: 1000px; }
   .region-top-menu .top-donate-btn { float: left; }
   .region-top-menu .top-donate-btn a { background: #cf2e1b; padding: 4px 20px; margin: 0px 5px; color: white; text-transform: uppercase; }
-  .region-top-menu .block .top-donate-desktop-text a { padding: 0px; color: #808080; background: red; } }
->>>>>>> ff4fbec... Added header tricolor buttons
+  .region-top-menu .block .top-donate-desktop-text a { padding: 0px; color: #808080; } }

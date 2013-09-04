@@ -7,9 +7,11 @@ docroot/files
 docroot/sites/*/files
 docroot/sites/*/private
 
-# Ignore cache files when working with sass
+# Ignore cache files when working with sass, and generated files
 .sass-cache
 .sass-cache/*
+docroot/sites/all/themes/sky/generated_files/*
+docroot/sites/all/themes/sky/generated_files
 
 # Ignore temporary files
 *~
