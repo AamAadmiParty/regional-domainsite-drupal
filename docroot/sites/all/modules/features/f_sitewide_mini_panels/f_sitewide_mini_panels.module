@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Sitewide Mini Panels feature.
+ */
+
+include_once 'f_sitewide_mini_panels.features.inc';

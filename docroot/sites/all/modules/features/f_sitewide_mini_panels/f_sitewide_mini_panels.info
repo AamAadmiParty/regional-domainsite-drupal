@@ -1,0 +1,11 @@
+name = Sitewide Mini Panels
+description = Exported mini panels that relevant in the sitewide and not specific to a content or user.
+core = 7.x
+package = Site Wide Functionality
+version = 7.x-1.0
+project = f_sitewide_mini_panels
+dependencies[] = ctools
+dependencies[] = panels_mini
+features[ctools][] = panels_mini:panels_default:1
+features[features_api][] = api:2
+features[panels_mini][] = top_donation_bar
