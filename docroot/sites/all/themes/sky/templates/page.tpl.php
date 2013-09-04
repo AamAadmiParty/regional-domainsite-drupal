@@ -30,10 +30,16 @@
 
         <?php endif; ?>
 
+      <div class="header-btns">
+        <a href="#" class="header-btn btn-1">Support</a>
+        <a href="#" class="header-btn btn-2">Donate</a>
+        <a href="#" class="header-btn btn-3">Contact</a>
+      </div>
+      <?php print render($page['header']); ?>
       </div><!-- /end #branding -->
     <?php endif; ?>
 
-    <?php print render($page['header']); ?>
+
     <?php print render($page['menu_bar']); ?>
 
   </header>

@@ -1,0 +1,370 @@
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable got to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+/*
+ * Really small screens and up
+ */
+/* @media only screen and (min-width: 220px) {} */
+/*
+ * Smartphone sizes and up
+ */
+/* @media only screen and (min-width: 320px) {} */
+/*
+ * Smartphone sizes and down
+ */
+@media only screen and (max-width: 480px) {
+  /*
+   * Float Region blocks example:
+   * In smaller screen sizes we can remove the float and widths so all blocks
+   * stack instead of displaying horizonally. The selector used here is an
+   * "attribute selector" which will match on any float block class. Use your
+   * inspector or Firebug to get the classes from the page output if you need
+   * more granular control over block alignment and stacking.
+   *
+   * "Float Region blocks" is an extension for floating blocks in regions, see
+   * your themes appearance settings, under the Extensions tab.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\0000349}}
+  .region[class*="float-blocks"] .block {
+    float: none;
+    width: 100%;
+  }
+}
+/*
+ * Tablet sizes and up
+ */
+/* @media only screen and (min-width: 768px) {} */
+/*
+ * Desktops/laptops and up
+ */
+@media only screen and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\0000366}}
+  .region-top-menu .top-donate-mobile-text {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\0000369}}
+  .header-btns {
+    position: absolute;
+    bottom: 1.5em;
+    right: 1em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\0000373}}
+  .header-btns .first-btn {
+    background: #f7941d;
+    color: #fff;
+    padding: 0.3em 3em;
+    margin-right: 2em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\0000379}}
+  .header-btns .second-btn {
+    background: #019847;
+    color: #fff;
+    padding: 0.3em 3em;
+  }
+}
+/*
+ * Everything below Desktops/laptops
+ */
+@media only screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\0000393}}
+  .region-top-menu .top-donate-desktop-text,
+  .header-btns {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\0000396}}
+  .columns-inner {
+    padding-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #fff;
+  }
+}
+@media all {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\00003105}}
+  .site-logo {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\00003108}}
+  .region-top-menu {
+    background: #000;
+    color: #ddd;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    max-width: 1000px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\00003115}}
+  .region-top-menu .top-donate-btn {
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\00003118}}
+  .region-top-menu .top-donate-btn a {
+    background: #cf2e1b;
+    padding: 4px 20px;
+    margin: 0px 5px;
+    color: white;
+    text-transform: uppercase;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/aap_domains\/docroot\/sites\/all\/themes\/sky\/sass\/responsive\.custom\.scss}line{font-family:\00003126}}
+  .region-top-menu .block .top-donate-desktop-text a {
+    padding: 0px;
+    color: #808080;
+  }
+}
+
+
+@media only screen and (max-width:320px) {
+body {
+  padding: 0px;
+}
+
+body.admin-menu {
+  margin-top: 0 !important;
+}
+
+#admin-menu {
+  display:none;
+}
+
+#branding,
+.region-header  {
+  float: none;
+  margin: 0 0 10px;
+  width: 100%;
+  clear: both;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.region-header .block {
+  clear: both;
+  float: none;
+  margin: 5px auto;
+  max-width: 80%;
+}
+
+.region-header .block .block-inner {
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
+}
+
+h1#site-name {
+  font-size: 1.5em;
+}
+
+h2#site-slogan {
+  font-size: 0.9em;
+}
+
+.region-top-menu {
+  height: auto;
+}
+
+.js #menu-bar nav {
+  display: none;
+}
+
+.menu-toggle {
+  display: block;
+  float: right;
+  font-size: 1.2em;
+  margin: 0 10px 0 0;
+  padding: 0;
+  text-transform: lowercase;
+}
+
+.menu-toggle a {
+  padding: 7px 10px 10px;
+  display: block;
+}
+
+#menu-bar .menu-wrapper {
+  float: none !important;
+}
+
+#menu-bar .menu-wrapper li a,
+#menu-bar .menu-wrapper .menu li a {
+  display: block;
+  padding: 0 0.5em;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+#menu-bar .menu-wrapper li,
+#menu-bar .menu-wrapper .menu li {
+  display: block;
+  float: none;
+  margin-right: 0;
+}
+
+#menu-bar .menu-wrapper ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.sf-menu {
+  width: 100%;
+}
+
+.sf-menu.sf-style-default ul {
+  width: 100% !important;
+}
+
+}
+@media only screen and (min-width:321px) and (max-width:480px) {
+body {
+  padding: 0px;
+}
+
+body.admin-menu {
+  margin-top: 0 !important;
+}
+
+#admin-menu {
+  display:none;
+}
+
+
+.region-header .block {
+  clear: both;
+  float: none;
+  margin: 5px auto;
+  max-width: 80%;
+}
+
+.region-header .block .block-inner {
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
+}
+
+h1#site-name {
+  font-size: 1.5em;
+}
+
+h2#site-slogan {
+  font-size: 0.9em;
+}
+
+.region-top-menu {
+  height: auto;
+}
+
+.js #menu-bar nav {
+  display: none;
+}
+
+.menu-toggle {
+  display: block;
+  float: right;
+  font-size: 1.2em;
+  margin: 0 10px 0 0;
+  padding: 0;
+  text-transform: lowercase;
+}
+
+.menu-toggle a {
+  padding: 7px 10px 10px;
+  display: block;
+}
+
+#menu-bar .menu-wrapper {
+  float: none !important;
+}
+
+#menu-bar .menu-wrapper li a,
+#menu-bar .menu-wrapper .menu li a {
+  display: block;
+  padding: 0 0.5em;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+#menu-bar .menu-wrapper li,
+#menu-bar .menu-wrapper .menu li {
+  display: block;
+  float: none;
+  margin-right: 0;
+}
+
+#menu-bar .menu-wrapper ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.sf-menu {
+  width: 100%;
+}
+
+.sf-menu.sf-style-default ul {
+  width: 100% !important;
+}
+
+}
+@media only screen and (min-width:481px) and (max-width:768px) {
+body {
+  padding: 0 8px;
+}
+h1#site-name {
+  font-size: 2em;
+}
+#menu-bar .menu-wrapper li a,
+#menu-bar .menu-wrapper .menu li a {
+  padding: 0 1em;
+  font-size: .9em;
+}
+#menu-bar .menu-wrapper li,
+#menu-bar .menu-wrapper .menu li {
+  margin-right: 2px;
+}
+
+}
+@media only screen and (min-width:769px) and (max-width:1024px) {
+h1#site-name {
+  font-size: 2.8em;
+}
+#menu-bar .menu-wrapper li a,
+#menu-bar .menu-wrapper .menu li a {
+  padding: 0 1.2em;
+  font-size: .94em;
+}
+#menu-bar .menu-wrapper li,
+#menu-bar .menu-wrapper .menu li {
+  margin-right: 4px;
+}
+
+}
+@media only screen and (min-width:1025px) {
+/**
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete 
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *   
+ * - There is an scss (SASS) version of this file in the /sass/ directory in your
+ *   sub-theme, if you set Compass to watch it or the directory this file will be
+ *   overwritten!
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+ 
+}
